@@ -1,0 +1,181 @@
+class Recipe {
+  final String id;
+  final String name;
+  final String imageUrl;
+  final String category;
+  final String cookTime;
+  final String servings;
+  final List<String> ingredients;
+  final List<String> instructions;
+
+  Recipe({
+    required this.id,
+    required this.name,
+    required this.imageUrl,
+    required this.category,
+    required this.cookTime,
+    required this.servings,
+    required this.ingredients,
+    required this.instructions,
+  });
+}
+
+// Sample data
+List<Recipe> sampleRecipes = [
+  Recipe(
+    id: '1',
+    name: 'Chicken Biryani',
+    imageUrl: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400',
+    category: 'Main Course',
+    cookTime: '60 min',
+    servings: '4',
+    ingredients: [
+      '500g Basmati Rice',
+      '1kg Chicken',
+      '2 Onions (sliced)',
+      '1 cup Yogurt',
+      '2 tsp Biryani Masala',
+      '4 tbsp Oil',
+      'Saffron (few strands)',
+      'Fresh Mint leaves',
+    ],
+    instructions: [
+      'Wash and soak rice for 30 minutes.',
+      'Marinate chicken with yogurt, spices and let it rest for 1 hour.',
+      'Fry onions until golden brown.',
+      'Cook chicken until tender.',
+      'Boil rice until 70% done.',
+      'Layer rice and chicken alternately.',
+      'Add saffron milk and mint on top.',
+      'Cook on dum (low heat) for 20 minutes.',
+    ],
+  ),
+  Recipe(
+    id: '2',
+    name: 'Margherita Pizza',
+    imageUrl: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400',
+    category: 'Italian',
+    cookTime: '30 min',
+    servings: '2',
+    ingredients: [
+      '250g Pizza Dough',
+      '100g Tomato Sauce',
+      '150g Mozzarella Cheese',
+      'Fresh Basil Leaves',
+      '2 tbsp Olive Oil',
+      'Salt & Pepper to taste',
+    ],
+    instructions: [
+      'Preheat oven to 220°C.',
+      'Roll out pizza dough on a floured surface.',
+      'Spread tomato sauce evenly on dough.',
+      'Tear mozzarella and place on sauce.',
+      'Drizzle with olive oil, season with salt & pepper.',
+      'Bake for 12-15 minutes until crust is golden.',
+      'Top with fresh basil before serving.',
+    ],
+  ),
+  Recipe(
+    id: '3',
+    name: 'Creamy Pasta',
+    imageUrl: 'https://images.unsplash.com/photo-1551183053-bf91798d702c?w=400',
+    category: 'Italian',
+    cookTime: '25 min',
+    servings: '3',
+    ingredients: [
+      '300g Penne Pasta',
+      '200ml Heavy Cream',
+      '100g Parmesan Cheese',
+      '3 cloves Garlic',
+      '2 tbsp Butter',
+      'Fresh Parsley',
+      'Salt & Black Pepper',
+    ],
+    instructions: [
+      'Boil pasta in salted water until al dente.',
+      'Melt butter in a pan over medium heat.',
+      'Saute garlic until fragrant.',
+      'Pour in heavy cream and bring to a simmer.',
+      'Add parmesan and stir until melted.',
+      'Toss in cooked pasta and mix well.',
+      'Garnish with parsley and serve hot.',
+    ],
+  ),
+  Recipe(
+    id: '4',
+    name: 'Classic Burger',
+    imageUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400',
+    category: 'Fast Food',
+    cookTime: '20 min',
+    servings: '2',
+    ingredients: [
+      '400g Ground Beef',
+      '2 Burger Buns',
+      '2 slices Cheddar Cheese',
+      'Lettuce & Tomato',
+      'Onion Rings',
+      'Ketchup & Mustard',
+      'Salt & Pepper',
+    ],
+    instructions: [
+      'Season ground beef with salt and pepper.',
+      'Shape into 2 equal patties.',
+      'Cook on a hot grill for 4-5 min each side.',
+      'Add cheese slice in last minute of cooking.',
+      'Toast burger buns lightly.',
+      'Assemble with lettuce, tomato, onion, and sauces.',
+      'Serve immediately with fries.',
+    ],
+  ),
+  Recipe(
+    id: '5',
+    name: 'Caesar Salad',
+    imageUrl: 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=400',
+    category: 'Salad',
+    cookTime: '15 min',
+    servings: '2',
+    ingredients: [
+      '1 head Romaine Lettuce',
+      '50g Parmesan Cheese',
+      '100g Croutons',
+      '3 tbsp Caesar Dressing',
+      '1 tbsp Lemon Juice',
+      'Black Pepper',
+    ],
+    instructions: [
+      'Wash and dry romaine lettuce thoroughly.',
+      'Tear lettuce into bite-sized pieces.',
+      'In a bowl, toss lettuce with Caesar dressing.',
+      'Add lemon juice and toss again.',
+      'Top with croutons and parmesan shavings.',
+      'Season with black pepper and serve cold.',
+    ],
+  ),
+  Recipe(
+    id: '6',
+    name: 'Beef Tacos',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400',
+    category: 'Mexican',
+    cookTime: '30 min',
+    servings: '4',
+    ingredients: [
+      '500g Ground Beef',
+      '8 Taco Shells',
+      '1 packet Taco Seasoning',
+      'Shredded Lettuce',
+      'Diced Tomatoes',
+      'Sour Cream',
+      'Shredded Cheese',
+      'Salsa Sauce',
+    ],
+    instructions: [
+      'Brown ground beef in a skillet over medium heat.',
+      'Drain excess fat from beef.',
+      'Add taco seasoning and water, simmer 5 minutes.',
+      'Warm taco shells in oven at 180°C for 3 minutes.',
+      'Fill shells with beef mixture.',
+      'Top with lettuce, tomato, cheese, sour cream.',
+      'Add salsa and serve immediately.',
+    ],
+  ),
+];
